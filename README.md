@@ -9,13 +9,15 @@ https://github.com/codeboylal/hbl3-django-project.git
 
 Move into the directory: 
 ```
-cd django-to-do-app
+cd hbl3-django-project
 ```
 
 Creating, activating a virtual environment and installing dependencies:
 ```
-py -m venv env
-.\env\Scripts\activate
+python3 -m venv env
+
+source ./env/bin/activate
+
 pip install -r requirements.txt
 ```
 
