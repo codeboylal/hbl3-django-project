@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ### Running the application
 To run the application:
 ```
-py manage.py runserver
+python manage.py runserver
 ```
 
 Open your web browser and go to the address: http://127.0.0.1:8000/
