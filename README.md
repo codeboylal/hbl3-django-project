@@ -4,7 +4,7 @@
 
 Clone the repository:
 ```
-git clone https://github.com/Luko575/django-to-do-app.git
+https://github.com/codeboylal/hbl3-django-project.git
 ```
 
 Move into the directory: 
