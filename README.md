@@ -46,12 +46,20 @@ CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000"]
 
 ```
 ### Build Docker Images List and Run Container
-List Docker Images:
+
 ```
+# Build docker images
 docker build -t my-django-site .
+
+# List docker images
 docker images 
+
+# List docker process | Containers
 docker ps
+
+# Run docker image and maping ports
 docker run -d -p 8000:8000 my-django-site
 
+# Accessing website which is hosted inside container 
 Access website: http://127.0.0.1:8000
 ```
