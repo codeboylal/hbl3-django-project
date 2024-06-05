@@ -28,3 +28,30 @@ python manage.py runserver
 ```
 
 Open your web browser and go to the address: http://127.0.0.1:8000/
+
+### To Containerize Application With Docker
+Create a Dockerfile:
+```
+FROM python:3.9
+
+WORKDIR /
+
+COPY . .
+
+RUN pip install -r requirements.txt
+
+EXPOSE 8000
+
+CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+```
+### Build Docker Images List and Run Container
+List Docker Images:
+```
+docker build -t my-django-site .
+docker images 
+docker ps
+docker run -d -p 8000:8000 my-django-site
+
+Access website: http://127.0.0.1:8000
+```
