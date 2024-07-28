@@ -2,11 +2,11 @@
 
 {% block content %}
 <div class="container pt-3">
-    <h4>Tasks</h4>
+    <h4>Updated List</h4>
     <form method="POST" action="{% url 'add' %}" enctype="multipart/form-data" class="w-100 d-flex pb-3">
         {% csrf_token %}
         {{ form }}
-        <button class="btn btn-outline-success">Add</button>
+        <button class="btn btn-outline-success">Append</button>
     </form>
 
     <table class="justify-content-center" id="table_tasks">
